@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sky Horse</title>
+    <title>Contact Us - Sky Horse</title>
     <style>
         * {
             margin: 0;
@@ -23,7 +23,7 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             text-align: center;
             padding: 40px;
             background: rgba(255, 255, 255, 0.95);
@@ -32,58 +32,39 @@
         }
 
         .logo {
-            font-size: 4rem;
+            font-size: 3rem;
             font-weight: bold;
             color: #2c3e50;
             margin-bottom: 20px;
             letter-spacing: 2px;
         }
 
-        .mission-statement {
-            font-size: 1.5rem;
-            color: #34495e;
-            line-height: 1.6;
+        .contact-info {
             margin: 30px 0;
-            font-style: italic;
-        }
-
-        .about {
-            max-width: 600px;
-            margin: 30px auto;
             color: #2c3e50;
             line-height: 1.6;
         }
 
-        .contact {
-            margin: 30px 0;
-            padding: 20px;
-            background: rgba(44, 62, 80, 0.05);
-            border-radius: 10px;
-        }
-
-        .contact a {
+        .contact-info a {
             color: #2c3e50;
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
-        .contact a:hover {
+        .contact-info a:hover {
             color: #3498db;
         }
 
-        .cta-button {
+        .back-link {
             display: inline-block;
-            padding: 12px 30px;
-            background: #2c3e50;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
             margin-top: 20px;
-            transition: background 0.3s ease;
+            color: #2c3e50;
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
 
-        .cta-button:hover {
-            background: #34495e;
+        .back-link:hover {
+            color: #3498db;
         }
 
         .footer {
@@ -91,32 +72,18 @@
             color: #7f8c8d;
             font-size: 0.9rem;
         }
-
-        @media (max-width: 768px) {
-            .logo {
-                font-size: 3rem;
-            }
-            
-            .mission-statement {
-                font-size: 1.2rem;
-            }
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="logo">SKY HORSE</div>
-        <div class="mission-statement">
-            "Our mission is to create products that will make people's life better"
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you!</p>
+            <p>Email us at: <a href="mailto:jin@skyhorse.app">jin@skyhorse.app</a></p>
         </div>
-        <div class="about">
-            Sky Horse is a forward-thinking company dedicated to innovation and excellence. We believe in creating meaningful solutions that enhance everyday life.
-        </div>
+        <a href="index.html" class="back-link">← Back to Home</a>
         <div class="footer">
-            <div style="margin-bottom: 10px;">
-                <a href="contact.html" style="color: #7f8c8d; text-decoration: none; margin: 0 10px;">Contact</a>
-                <a href="privacy.html" style="color: #7f8c8d; text-decoration: none; margin: 0 10px;">Privacy Policy</a>
-            </div>
             © 2025 Sky Horse. All rights reserved.
         </div>
     </div>
