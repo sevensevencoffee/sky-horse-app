@@ -1,142 +1,452 @@
+/* Futura Font Face Declarations */
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura Light font.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura Light Italic font.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura Book font.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura Book Italic font.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/futura medium bt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura Medium Italic font.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura Heavy font.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura Heavy Italic font.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura Bold font.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura Bold Italic font.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura Extra Black font.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Fallback web fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Futura', 'Work Sans', 'Montserrat', 'Poppins', 'Inter', 'Trebuchet MS', Arial, sans-serif;
 }
 
 body {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: #F8F4EC;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    font-weight: 400;
 }
 
 .container {
     max-width: 1200px;
     text-align: center;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 60px 50px;
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 32px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08), 0 8px 25px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Logo */
 .logo {
-    font-size: 4rem;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-}
-
-.logo-img {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px auto;
-}
-
-.mission-statement {
-    font-size: 1.5rem;
-    color: #34495e;
-    line-height: 1.6;
-    margin: 30px 0;
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Futura', 'Work Sans', 'Montserrat', Arial, sans-serif;
+    text-transform: uppercase;
     font-style: italic;
 }
 
-.about {
-    max-width: 600px;
-    margin: 30px auto;
-    color: #2c3e50;
-    line-height: 1.6;
+/* Intro */
+.intro {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.7;
+    margin: 40px auto;
+    font-style: italic;
+    max-width: 800px;
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(243, 112, 33, 0.05) 0%, rgba(243, 112, 33, 0.1) 100%);
+    border-radius: 20px;
+    border-left: 4px solid #F37021;
+    font-family: 'Futura', 'Poppins', Arial, sans-serif;
 }
 
-.contact-info {
-    margin: 30px 0;
-    color: #2c3e50;
-    line-height: 1.6;
+/* Apps Section */
+.apps {
+    margin: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
 }
 
-.contact-info a {
-    color: #2c3e50;
+.apps-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+    font-family: 'Futura', 'Inter', Arial, sans-serif;
+}
+
+.app-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background: transparent;
+    color: #000000;
     text-decoration: none;
-    transition: color 0.3s ease;
+    border-radius: 8px;
+    border: 1px solid #F37021;
+    transition: all 0.3s ease;
+    font-family: 'Futura', 'Inter', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.contact-info a:hover {
-    color: #3498db;
+.app-link:hover {
+    background: #F37021;
+    color: #000000;
 }
 
+/* App Page Styles */
+.app-page {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.app-page-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #000000;
+    margin: 30px 0 10px 0;
+    font-family: 'Futura', 'Inter', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.app-page-subtitle {
+    font-size: 1.3rem;
+    color: #F37021;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: 'Futura', 'Inter', Arial, sans-serif;
+}
+
+/* Content Cards */
+.app-description,
+.about,
+.contact-info,
 .privacy-content {
-    color: #2c3e50;
-    line-height: 1.6;
     text-align: left;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(243, 112, 33, 0.1);
+    margin: 30px 0;
+    font-family: 'Futura', 'Inter', Arial, sans-serif;
+    line-height: 1.8;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
-.privacy-content h2 {
-    margin: 30px 0 15px 0;
-    color: #2c3e50;
+.app-description {
+    margin: 30px auto;
 }
 
-.privacy-content h3 {
-    margin: 20px 0 10px 0;
-    color: #2c3e50;
+.about {
+    max-width: 700px;
+    margin: 35px auto;
     font-size: 1.1rem;
 }
 
-.privacy-content ul {
-    margin: 10px 0 20px 20px;
+.contact-info {
+    margin: 40px 0;
+    font-size: 1.1rem;
+}
+
+.privacy-content {
+    margin: 30px 0;
+}
+
+/* Headings */
+h2, h3 {
+    color: #000000;
+    font-family: 'Futura', 'Inter', Arial, sans-serif;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.app-description h3,
+.privacy-content h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 25px 0 15px 0;
+}
+
+.privacy-content h2 {
+    font-size: 1.8rem;
+    margin: 35px 0 20px 0;
+}
+
+.privacy-content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 25px 0 15px 0;
+}
+
+/* Lists */
+ul {
+    margin: 15px 0 25px 25px;
     list-style-type: disc;
 }
 
+li {
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: 400;
+}
+
 .privacy-content li {
-    margin-bottom: 8px;
-    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+    font-weight: 400;
 }
 
 .privacy-content p {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-.back-link {
-    display: inline-block;
-    margin-top: 20px;
-    color: #2c3e50;
+/* Links */
+a {
+    color: #F37021;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.back-link:hover {
-    color: #3498db;
+.contact-info a {
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: rgba(243, 112, 33, 0.1);
 }
 
-.footer {
-    margin-top: 40px;
-    color: #7f8c8d;
-    font-size: 0.9rem;
+.contact-info a:hover {
+    color: #000000;
+    background: rgba(243, 112, 33, 0.2);
+    transform: translateY(-2px);
 }
 
 .footer a {
-    color: #7f8c8d;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s ease;
+    margin: 0 15px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 8px;
 }
 
 .footer a:hover {
-    color: #3498db;
+    color: #000000;
+    background: rgba(243, 112, 33, 0.1);
+    transform: translateY(-1px);
 }
 
+/* Back Link */
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    border-radius: 12px;
+    background: rgba(243, 112, 33, 0.1);
+    border: 2px solid rgba(243, 112, 33, 0.2);
+}
+
+.back-link:hover {
+    color: #000000;
+    background: rgba(243, 112, 33, 0.2);
+    border-color: rgba(243, 112, 33, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(243, 112, 33, 0.2);
+}
+
+/* App Status */
+.app-status {
+    background: linear-gradient(135deg, rgba(243, 112, 33, 0.05) 0%, rgba(243, 112, 33, 0.1) 100%);
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 4px solid #F37021;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.app-status p {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    border: 1px solid rgba(243, 112, 33, 0.1);
+}
+
+/* Mobile Responsive */
 @media (max-width: 768px) {
-    .logo {
-        font-size: 3rem;
+    .container {
+        padding: 40px 30px;
+        margin: 10px;
     }
     
-    .mission-statement {
+    .logo {
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+    }
+    
+    .intro {
+        font-size: 1.3rem;
+        padding: 20px;
+        margin: 30px 0;
+    }
+    
+    .apps {
+        margin: 40px 0;
+        gap: 8px;
+    }
+    
+    .apps-title {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    
+    .app-link {
+        font-size: 1rem;
+    }
+    
+    .app-page-title {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+    
+    .app-page-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .app-description,
+    .about,
+    .contact-info,
+    .privacy-content {
+        padding: 20px;
+        font-size: 1rem;
+    }
+    
+    .app-description h3 {
         font-size: 1.2rem;
     }
-} 
+    
+    .contact-info h2 {
+        font-size: 1.6rem;
+    }
+    
+    .privacy-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .footer {
+        padding: 20px;
+        font-size: 0.9rem;
+    }
+    
+    .footer a {
+        margin: 0 8px;
+        padding: 4px 8px;
+    }
+}
